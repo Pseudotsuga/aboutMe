@@ -1,4 +1,9 @@
 'use strict';
+
+//Custom Greeting
+var username = prompt('What are you called?');
+alert('Hello ' + username + ' ! Thank you for your interest in my site.');
+
 //First Question Block
 var noCrampons = prompt('Do I ice climb?', 'Yes/no or y/n answer formats accepted.');
 
@@ -59,9 +64,9 @@ if(excelWizard.toLowerCase() === 'n' || excelWizard.toLowerCase() === 'no'){
 //Fifth Question Block
 var occidentalis = prompt('Was I born in New York before moving west?', 'Take your best guess!');
 if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
-  alert('You\'re right, west coast best coast!');
+  alert('You\'re right, west coast best coast ' + username + '!');
 }else{
-  alert('Better luck next time!');
+  alert('Better luck next time ' + username + '!');
 }
 
 // if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
