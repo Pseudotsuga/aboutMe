@@ -3,6 +3,7 @@ debugger;
 var correctNumber = 63;
 var numberGuessLoop = 1;
 var answerAchieved = 0;
+var hairColor = ['red'];
 function renderPageFunction() {
   var username = prompt('What are you called?');
   alert('Hello ' + username + ' ! Thank you for your interest in my site.');
@@ -115,5 +116,8 @@ function renderPageFunction() {
   if(numberGuessLoop > 4){ alert('I\'m sorry, you\'ve ran out of tries. The correct answer was 63.');
   }
 }
+
+//7th Question Block
+
 // I added this section because I was getting annoyed by the prompt loading before the html content. It works like this: the window object supports the addEventListener method, this function takes as parameters an event type (load is one) and an function. In order to make this work I had to wrap all my javascript in a single function declaration.
 window.addEventListener('load', renderPageFunction);

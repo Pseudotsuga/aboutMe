@@ -1,3 +1,11 @@
+## Attribution:
+reset.css from:
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+
+High contrast color values were generated with http://colorsafe.co/ by Donielle Berg and Adrian Rapp 
+
 ## About Me 
 This is a webpage that combines a fun guessing game with my biographical information.
 
