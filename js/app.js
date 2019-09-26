@@ -1,4 +1,5 @@
 'use strict';
+function gameOne(){ 
 var correctNumber = 63;
 var numberGuessLoop = 1;
 var numberGuessesAllowed = 4;
@@ -87,7 +88,8 @@ if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
 }else{
   console.log('Better luck next time!');
 }
-
+} /* closing of gameOne*/
+gameOne ();
 //   // Sixth Question Block
 //   //    Standard solution
 //   while(numberGuessLoop <= numberGuessesAllowed){
@@ -108,6 +110,8 @@ if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
 //       console.log('Low');
 //     }
 //   }
+
+
 overengineeredSoup: {
   while(numberGuessLoop <= 4){
     var numberGuess = prompt('Guess a number between 1 and 100!', 'Numeric characters only please.');
@@ -140,7 +144,9 @@ overengineeredSoup: {
 if(numberGuessLoop > 4 && answerAchieved === 0){ alert('I\'m sorry, you\'ve ran out of tries. The correct answer was 63.');
 }
 
+
 //7th Question
+function gameThree () {
 while(arrayLoopTracker <= arrayGuessesAllowed){
   var shapeReturn = prompt('Which shapes do I prefer?');
   if(arrayAnswers.includes(shapeReturn.toLowerCase())){
