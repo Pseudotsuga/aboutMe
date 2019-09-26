@@ -47,3 +47,7 @@ Be kind to eachother.
 MIT
 
 MIT © [Pseudotsuga]()
+
+Driver is Mason Walker
+Nav is Conor. 
+We worked on this together! 
