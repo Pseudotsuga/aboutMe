@@ -168,3 +168,5 @@ alert('You answered ' + totalScore + 'out of 7 questions correctly.');
 if(totalScore === 7){
   alert('A righteous conorisseur I see.');
 }
+}
+gameThree ();
