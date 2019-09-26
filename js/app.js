@@ -111,7 +111,7 @@ gameOne ();
 //     }
 //   }
 
-fuction gameTwo() {
+function gameTwo() {
 overengineeredSoup: {
   while(numberGuessLoop <= 4){
     var numberGuess = prompt('Guess a number between 1 and 100!', 'Numeric characters only please.');
