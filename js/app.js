@@ -7,6 +7,8 @@ var arrayAnswers = ['triangle','hexagon','octagon','dodecahedron'];
 var arrayGuessesAllowed = 6;
 var arrayLoopTracker = 0;
 var arrayAchievement = 0;
+var totalScore = 0;
+
 var username = prompt('What are you called?');
 alert('Hello ' + username + ' ! Thank you for your interest in my site.');
 
@@ -15,6 +17,7 @@ var noCrampons = prompt('Do I ice climb?', 'Yes/no or y/n answer formats accepte
 
 if(noCrampons.toLowerCase() === 'n' || noCrampons.toLowerCase() === 'no'){
   alert('You\'re right, ice climbing would be a slippery slope towards year-round dirtbagging');
+  totalScore ++;
 }else{
   alert('Better luck next time!');
 }
@@ -30,6 +33,7 @@ var goPanthers = prompt('Did I graduate from Redmond High School?', 'Take your b
 
 if(goPanthers.toLowerCase() === 'y' || goPanthers.toLowerCase() === 'yes'){
   alert('You\'re right, let\'s go panthers!');
+  totalScore ++;
 }else{
   alert('Better luck next time!');
 }
@@ -44,6 +48,7 @@ if(goPanthers.toLowerCase() === 'n' || goPanthers.toLowerCase() === 'no'){
 var socrates = prompt('Do I know everything about software development?', 'Take your best guess!');
 if(socrates.toLowerCase() === 'n' || socrates.toLowerCase() === 'no'){
   alert('You\'re right, I know just enough to get excited about how much I have to learn.');
+  totalScore ++;
 }else{
   alert('Better luck next time!');
 }
@@ -58,6 +63,7 @@ if(socrates.toLowerCase() === 'n' || socrates.toLowerCase() === 'no'){
 var excelWizard = prompt('Have I always wanted to be an accountant?', 'Take your best guess!');
 if(excelWizard.toLowerCase() === 'n' || excelWizard.toLowerCase() === 'no'){
   alert('You\'re right, I never quite got interested.');
+  totalScore ++;
 }else{
   alert('Better luck next time!');
 }
@@ -71,6 +77,7 @@ if(excelWizard.toLowerCase() === 'n' || excelWizard.toLowerCase() === 'no'){
 var occidentalis = prompt('Was I born in New York before moving west?', 'Take your best guess!');
 if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
   alert('You\'re right, west coast best coast ' + username + '!');
+  totalScore ++;
 }else{
   alert('Better luck next time ' + username + '!');
 }
@@ -88,6 +95,7 @@ if(occidentalis.toLowerCase() === 'n' || occidentalis.toLowerCase() === 'no'){
 //     numberGuess = parseInt(numberGuess, 10);
 //     if(numberGuess === correctNumber){
 //       alert('Great guess, you got it.');
+//       totalScore ++;
 //       numberGuessLoop += numberGuessesAllowed;
 //       console.log('correctAns');
 //     } if(numberGuess > correctNumber){
@@ -109,6 +117,7 @@ overengineeredSoup: {
       alert('By George, you\'ve got it.');
       numberGuessLoop += numberGuessesAllowed;
       answerAchieved ++;
+      totalScore ++;
       break overengineeredSoup;
     case (-1):
       alert('Too high.');
@@ -136,6 +145,7 @@ while(arrayLoopTracker <= arrayGuessesAllowed){
   var shapeReturn = prompt('Which shapes do I prefer?');
   if(arrayAnswers.includes(shapeReturn.toLowerCase())){
     alert(shapeReturn + ' is correct. All possible answers include:' + arrayAnswers);
+    totalScore ++;
     arrayLoopTracker += arrayGuessesAllowed;
   } else {
     alert('I\'m sorry, that wasn\'t quite correct.');
@@ -145,4 +155,10 @@ while(arrayLoopTracker <= arrayGuessesAllowed){
 
 if(arrayLoopTracker > arrayGuessesAllowed && arrayAchievement === 0){
   alert('You ran out of attempts. Correct answers were ' + arrayAnswers);
+}
+
+//Total Score Declaration
+alert('You answered ' + totalScore + 'out of 7 questions correctly.');
+if(totalScore === 7){
+  alert('A righteous conorisseur I see.');
 }
