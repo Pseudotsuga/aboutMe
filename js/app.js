@@ -5,7 +5,7 @@ var numberGuessesAllowed = 4;
 var answerAchieved = 0;
 var arrayAnswers = ['triangle','hexagon','octagon','dodecahedron'];
 var arrayGuessesAllowed = 6;
-var arrayLoopTracker = 0;
+var arrayLoopTracker = 1;
 var arrayAchievement = 0;
 var totalScore = 0;
 
@@ -67,14 +67,21 @@ while(numberGuessLoop <= numberGuessesAllowed){
     alert('Great guess, you got it.');
     totalScore ++;
     numberGuessLoop += numberGuessesAllowed;
+    answerAchieved++;
   } if(numberGuess > correctNumber){
     alert('Too high!');
     numberGuessLoop ++;
   } if(numberGuess < correctNumber){
     alert('Too low.');
     numberGuessLoop ++;
+  } else{
+    alert('please use numbers.');
+    numberGuessLoop++;
   }
 }
+if(numberGuessLoop > 4 && answerAchieved === 0){ alert('I\'m sorry, you\'ve ran out of tries. The correct answer was 63.');
+}
+
 //Switch Case Solution
 // overengineeredSoup: {
 //   while(numberGuessLoop <= 4){
@@ -113,6 +120,7 @@ while(arrayLoopTracker <= arrayGuessesAllowed){
     alert(shapeReturn + ' is correct. All possible answers include:' + arrayAnswers);
     totalScore ++;
     arrayLoopTracker += arrayGuessesAllowed;
+    arrayAchievement++;
   } else {
     alert('I\'m sorry, that wasn\'t quite correct.');
     arrayLoopTracker++;
