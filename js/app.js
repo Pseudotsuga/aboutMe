@@ -3,7 +3,10 @@ var correctNumber = 63;
 var numberGuessLoop = 1;
 var numberGuessesAllowed = 4;
 var answerAchieved = 0;
-
+var arrayAnswers = ['triangle','hexagon','octagon','dodecahedron'];
+var arrayGuessesAllowed = 6;
+var arrayLoopTracker = 0;
+var arrayAchievement = 0;
 var username = prompt('What are you called?');
 alert('Hello ' + username + ' ! Thank you for your interest in my site.');
 
@@ -128,3 +131,18 @@ overengineeredSoup: {
 if(numberGuessLoop > 4 && answerAchieved === 0){ alert('I\'m sorry, you\'ve ran out of tries. The correct answer was 63.');
 }
 
+//7th Question
+while(arrayLoopTracker <= arrayGuessesAllowed){
+  var shapeReturn = prompt('Which shapes do I prefer?');
+  if(arrayAnswers.includes(shapeReturn.toLowerCase())){
+    alert(shapeReturn + ' is correct. All possible answers include:' + arrayAnswers);
+    arrayLoopTracker += arrayGuessesAllowed;
+  } else {
+    alert('I\'m sorry, that wasn\'t quite correct.');
+    arrayLoopTracker++;
+  }
+}
+
+if(arrayLoopTracker > arrayGuessesAllowed && arrayAchievement === 0){
+  alert('You ran out of attempts. Correct answers were ' + arrayAnswers);
+}
