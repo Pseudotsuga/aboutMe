@@ -111,7 +111,7 @@ gameOne ();
 //     }
 //   }
 
-
+fuction gameTwo() {
 overengineeredSoup: {
   while(numberGuessLoop <= 4){
     var numberGuess = prompt('Guess a number between 1 and 100!', 'Numeric characters only please.');
@@ -143,8 +143,8 @@ overengineeredSoup: {
 }
 if(numberGuessLoop > 4 && answerAchieved === 0){ alert('I\'m sorry, you\'ve ran out of tries. The correct answer was 63.');
 }
-
-
+}
+gameTwo ();
 //7th Question
 function gameThree () {
 while(arrayLoopTracker <= arrayGuessesAllowed){
