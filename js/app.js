@@ -1,5 +1,5 @@
 'use strict';
-function gameOne(){ 
+
 var correctNumber = 63;
 var numberGuessLoop = 1;
 var numberGuessesAllowed = 4;
@@ -9,7 +9,7 @@ var arrayGuessesAllowed = 6;
 var arrayLoopTracker = 0;
 var arrayAchievement = 0;
 var totalScore = 0;
-
+function gameOne(){ 
 var username = prompt('What are you called?');
 alert('Hello ' + username + ' ! Thank you for your interest in my site.');
 
@@ -164,7 +164,7 @@ if(arrayLoopTracker > arrayGuessesAllowed && arrayAchievement === 0){
 }
 
 //Total Score Declaration
-alert('You answered ' + totalScore + 'out of 7 questions correctly.');
+alert('You answered ' + totalScore + ' out of 7 questions correctly.');
 if(totalScore === 7){
   alert('A righteous conorisseur I see.');
 }
