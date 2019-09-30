@@ -14,11 +14,8 @@ main {
     border: 3px solid black;
     font-size: 20px;
 }  
-ul {
-    font-weight: bold;
-}    
 
-ol {
+h2 {
     font-weight: bold;
 }
 li {
